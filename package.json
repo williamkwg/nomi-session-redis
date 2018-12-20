@@ -1,14 +1,16 @@
 {
   "name": "nomi-session-redis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nomi-session-redis",
   "main": "./lib/Session.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.corp.qunar.com:fed/nomi-session-redis.git"
+    "url": "https://github.com/williamkwg/nomi-session-redis.git",
+    "innerurl": "git@gitlab.corp.qunar.com:fed/nomi-session-redis.git"
   },
   "keywords": [
     "nomi",
@@ -20,6 +22,7 @@
     "session-redis"
   ],
   "author": "weiguo.kong",
+  "email": "weiguo.kong@qunar.com",
   "license": "ISC",
   "dependencies": {
     "babel-runtime": "^6.26.0",

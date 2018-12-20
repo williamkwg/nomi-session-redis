@@ -1,11 +1,6 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var key = Symbol('NOMI_SESSION_REDIS');
-var defaultConfig = exports.defaultConfig = {
-  key: key, // session 存放在cookie中的 key ，同时 使用该key 进行加密
+const key = Symbol('NOMI_SESSION_REDIS');
+export const defaultConfig = {
+  key, // session 存放在cookie中的 key ，同时 使用该key 进行加密
   httpOnly: true,
   encrypt: true, // 对cookie进行加密，不对redis的 k-v进行加密
   maxAge: 1000 * 60 * 60 * 24, // 默认一天 有效期
@@ -19,14 +14,14 @@ var defaultConfig = exports.defaultConfig = {
     password: ''
   },
   sync: {
-    timer: -1, // -1 默认使用系统 内置的 RDB模式，持久化机制由redis服务器配置决定    number : 每隔 number seconds 持久化一次
+    timer:  -1, // -1 默认使用系统 内置的 RDB模式，持久化机制由redis服务器配置决定    number : 每隔 number seconds 持久化一次
     AOF: false,
     update: true // 每次数据更新的时候立刻持久化数据
   }
-};
+}
 
-var SAVE = exports.SAVE = {
+export const SAVE = {
   AOF: 'bgrewriteaof',
   RDB: 'bgsave',
   OTHER: 'save'
-};
+}
