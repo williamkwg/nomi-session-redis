@@ -1,6 +1,6 @@
 {
   "name": "nomi-session-redis",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nomi-session-redis",
   "main": "./lib/Session.js",
   "scripts": {
@@ -9,8 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/williamkwg/nomi-session-redis.git",
-    "innerurl": "git@gitlab.corp.qunar.com:fed/nomi-session-redis.git"
+    "url": "https://github.com/williamkwg/nomi-session-redis.git"
   },
   "keywords": [
     "nomi",
